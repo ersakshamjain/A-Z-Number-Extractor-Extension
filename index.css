@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 300px;
+  width: 300px;
+  background-color: white;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar {
+  width: 324.75px;
+  /* height: 33.75px; */
+  /*background-color: #26499D;*/
+  background: linear-gradient(180deg, #aa52dc, #673ab7);
+  position: fixed;
+  top: 0px;
+  z-index: 9;
+}
+
+.homeimg {
+  width: 23px;
+  height: 23px;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.heading {
+  text-align: center;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-style: "Poppins", sans-serif;
+  position: absolute;
+  top: 8px;
+  left: 45px;
+}
+
+.section {
+  margin-top: 44px;
+}
+
+.checkbox {
+  border: 1px solid #000000;
+  opacity: 1;
+  display: none;
+  border: 1.5rem;
+}
+
+.select {
+  display: flex;
+}
+.select-1 {
+  visibility: hidden;
+  display: flex;
+}
+.select_text {
+  font-size: 18px;
+  font-weight: 500;
+}
+.select_ALL {
+  margin-right: 5px;
+}
+.styling {
+  margin-left: 20px;
+  margin-top: 5px;
+ 
+}
+
+#append{
+  padding: 0px;
+  padding-bottom: 55px;
+}
+.box-5 {
+  display: none;
+  margin-left: 10px;
+}
+.box-5 #selectall {
+  font-weight: bold;
+}
+
+.check_box {
+  display: flex;
+  font-size: 15px;
+  font-weight: 450;
+}
+
+.found {
+  display: none;
+  text-align: center;
+  /* margin-top: 68px; */
+  font-size: 21px;
+  color: #26499d;
+}
+
+.box-1 {
+  margin-left: 10px;
+  margin-top: 2px;
+  display: none;
+}
+.checkbox1 {
+  border: 1px solid #000000;
+  opacity: 1;
+}
+
+.box-2 {
+  margin-left: 9px;
+}
+
+#gmails {
+  font-size: 15px;
+  font-weight: 500;
+  /* margin: 3px; */
+}
+
+.footer {
+  width: 300px;
+  height: 42px;
+  position: fixed;
+  bottom: 0;
+  /*background: #26499D 0% 0% no-repeat padding-box;*/
+  background-color: #dddddd;
+  box-shadow: 0px -3px 5px #0000001f;
+  border-radius: 8px 8px 0px 0px;
+  opacity: 1;
+  /* margin-bottom: 10px; */
+}
+
+.anchor_btn1 {
+  width: 60px;
+  height: 30px;
+
+  background: linear-gradient(180deg, #aa52dc, #673ab7);
+
+  margin-top: 6px;
+  font: normal normal bold 9px/13px Poppins;
+  border-radius: 3px;
+  border: none;
+  font-size: 11px;
+  text-align: center;
+  cursor: pointer;
+  /* padding-top: 8px; */
+  text-decoration-line: none;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn1 {
+  border: none;
+  font: normal normal bold 9px/13px Poppins;
+  font-size: 11px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.img {
+  width: 10px;
+  height: 10px;
+  margin-bottom: -2px;
+  margin-right: 1px;
+}
+
+span {
+  padding-right: 2px;
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  font-size: 11px;
+  position: fixed;
+  bottom: 52px;
+  left: 115px;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

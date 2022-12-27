@@ -1,0 +1,31 @@
+{
+    "name": "AZ Number Extractor",
+    "description": "Simple number extractor extension for Chrome To scrape all number's automatically from webpages.",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "content_scripts":[{
+        "js": ["content.js"],
+        "matches": ["<all_urls>"],
+        "run_at": "document_end"
+    }],
+
+    "action": {
+        "default_popup": "index.html"
+    },
+
+    "background": {
+
+       
+        "service_worker": "background.js"
+        
+    },
+
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "storage",
+        "unlimitedStorage",
+        "gcm",
+        "notifications"
+    ]
+}
